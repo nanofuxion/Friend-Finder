@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Survey - Friend Finder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS CDN  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"
+		integrity="sha256-c4gVE6fn+JRKMRvqjoDp+tlG4laudNYrXI1GncbfAYY=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<!-- Font Awesome CSS Icons (For cool glyphicons) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron mt-3">
+			<h1>Survey</h1>
+			<form>
+				<div class="form-group">
+					<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+				</div>
+				<div class="form-group">
+					<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+				</div>
+				<div class="jumbotron mt-3 bg-secondary text-white mt-5 pt-3">
+					<div class="form-group">
+						<label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
+						<select class="form-control" id="question1">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question2">You find it easy to stay relaxed and focused even when there is some
+							pressure.</label>
+						<select class="form-control" id="question2">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question3">Generally speaking, you rely more on your experience than your
+							imagination.</label>
+						<select class="form-control" id="question3">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question4">You rarely do something just out of sheer curiosity.</label>
+						<select class="form-control" id="question4">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question5">In a discussion, truth should be more important than people’s
+							sensitivities.</label>
+						<select class="form-control" id="question5">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question6">It is often difficult for you to relate to other people’s
+							feelings.</label>
+						<select class="form-control" id="question6">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question7">You rarely get carried away by fantasies and ideas.</label>
+						<select class="form-control" id="question7">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question8">You think that everyone’s views should be respected regardless of whether
+							they are supported by facts or not.</label>
+						<select class="form-control" id="question8">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question9">You feel more energetic after spending time with a group of
+							people.</label>
+						<select class="form-control" id="question9">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="question10">I like dark humor.</label>
+						<select class="form-control" id="question10">
+							<option value="" selected disabled hidden>Choose here</option>
+							<option value="1">1 (Strongly Disagree)</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5 (Strongly Agree)</option>
+						</select>
+					</div>
+				</div>
+			</form>
+			<div class="text-center">
+				<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+			</div>
+		</div>
+
+
+		<!-- Bestie Modal -->
+		<div class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Your New Bestie</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h2 id="userMatch"></h2>
+						<img id="userMatchImage" src="#">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="footer">
+			<hr>
+			<div class="container">
+				<p><a href="/api/friends">API Friends List</a> | <a
+						href="https://github.com/nanofuxion/Friend-Finder">GitHub Repo</a></p>
+			</div>
+		</footer>
+
+		<script src="app.js"></script>
+
+</body>
+
+</html>
+
+<!-- <script type="text/javascript">
+	$("#submitBtn").on("click", function (event) {
+		event.preventDefault();
+
+		// Form validation
+		var valid = true;
+
+		if ($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if ($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+
+		if (valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+
+			var currentURL = window.location.origin;
+
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function (data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$(".modal").modal(show=true);
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Survey is incomplete!");
+		}
+	});
+</script> -->

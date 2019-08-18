@@ -1,0 +1,28 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "A Friend finding app using a node/express based survey to determine friendship compatability. ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanofuxion/Friend-Finder.git"
+  },
+  "keywords": [
+    "friend",
+    "finder",
+    "trilogy",
+    "miami"
+  ],
+  "author": "Nanofuxion (Jordan Miller)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanofuxion/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/nanofuxion/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
